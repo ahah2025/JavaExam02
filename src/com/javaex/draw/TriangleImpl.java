@@ -1,6 +1,6 @@
 package com.javaex.draw;
 
-public class TriangleImpl {
+public class TriangleImpl extends DrawApp implements Drawable{
 
 	//필드
 	private int width;
@@ -35,6 +35,10 @@ public class TriangleImpl {
 	//메소드 일반
 	@Override
 	public String toString() {
-		return "TriangleImpl [width=" + width + ", height=" + height + "]";
+		return "삼각형을 그렸습니다. [가로:" + width + ", 세로:" + height + "]";
+	}
+	public void draw() {
+		System.out.println("삼각형을 그렸습니다.");
+		System.out.println("[가로:" + width + ", 세로:" + height + "]");
 	}
 }
